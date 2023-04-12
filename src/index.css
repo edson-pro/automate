@@ -10,8 +10,8 @@
 }
 body {
   color-scheme: dark;
-  background: linear-gradient(90deg, #1b121d 0%, #120f2f 100%);
-  background-color: #1b121d;
+  @apply dark:bg-[#1b121d] dark:bg-gradient-to-r dark:from-[#1b121d] dark:to-[#120f2f];
+  /* background: linear-gradient(90deg, #1b121d 0%, #120f2f 100%); */
 }
 body:before {
   content: "";
